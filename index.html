@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Book store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
 
@@ -13,12 +13,12 @@
     <header>
 
       <!-- ADD HERE COLOR BAR -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-warning">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-danger">
 
-        <div class="container-fluid bg-warning">
+        <div class="container-fluid bg-light">
            <img src="images/logo.png" alt="Logo" width="40" height="40" class="me-2 rounded-circle">
 
-          <a class="navbar-brand" href="index.html">Travel& Tourism</a>
+          <a class="navbar-brand" href="index.html">Book Store</a>
           
           
           <!-- IMAGE CHANGES -->
@@ -30,7 +30,7 @@
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-              <li class="nav-item  bg-info">
+              <li class="nav-item bg-primary">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
 
@@ -39,7 +39,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="bestsellers.html">Bestsellers</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -60,8 +60,8 @@
 
             </ul>
 
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <form class="d-flex" role="search"bg-primary="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" bg-success="search"/>
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
 
@@ -72,6 +72,243 @@
       </nav>
 
     </header>
+
+    <main>
+      <section> 
+        <!-- slider section start -->
+         <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/harshahars-beach-7179100_1920.jpg" class="d-block w-100" alt="image">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Explore Books</h5>
+        <p>"A room without books is like a body without a soul."</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/harshahars-jungle-6897803_1920.jpg" class="d-block w-100" alt="image">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/five.jpg"class="d-block w-100" alt="flag">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>special Offers</h5>
+        <p>"Today a reader, tomorrow a leader."</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </section>
+      <!-- slider section end -->
+
+      <!-- about section end -->
+      <section class>
+          <div class="container p-4">
+            <div class="row">
+              <div class="col-md-7 p-4">
+                <h1> About</h1>
+                <p>The term originally referred to messages sent using the Short Message Service (SMS) on mobile devices. It has grown beyond alphanumeric text to include multimedia messages using the Multimedia Messaging Service (MMS) and Rich Communication Services (RCS), which can contain digital images, videos, and sound content, as well as ideograms known as emoji (happy faces, sad faces, and other icons), and on various instant messaging apps. Text messaging has been an extremely popular medium of communication since the turn of the century and has also influenced changes in society
+                    </p>
+                    <p>
+                        Identify common cursive letter formation errors like valleys, blobs, and volcanoes; retrace to midline, close gaps, and practice connecting letters for legible writing.
+                    </p>
+                    <a href="about.html">
+                   <button class="btn btn-danger">
+                    more info....</button></a>
+              </div>
+              <div class="col-md-5 p-4">
+                <img src="images/pexels-alexakrain-8762862.jpg"
+                class="img-fluid w-100"/>
+
+              </div>
+            </div>
+          </div>
+      </section>
+<!-- STYLE TAG -->
+      <style>
+        .card:hover{
+          background-color:black;
+          color:white;
+        }
+      </style>
+      <section class="mt-5 bg-dark">
+        <div class="container p-4">
+          <div class="row">
+            <h2 class="text-white p-4">Products</h2>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/book1.jpg"
+                class="card-img-top"alt="...">
+            
+            <div class="card-body">
+              <h4 class="card-title">SCULPTURE</div>
+            <p class="card-text p-4">Trace model letters to eliminate common printing errors like valleys, blobs, gaps, volcanoes, and oops; practice with consistent retraces, round circles, and proper closures to produce even, legible handwriting.</p>
+          </div>
+            </div>
+           <div class="col-md-3">
+              <div class="card">
+                <img src="images/book2.jpg"
+                class="card-img-top"alt="...">
+            
+            <div class="card-body">
+              <h4 class="card-title">COURT OF MIST&FURY</div>
+            <p class="card-text p-4">Trace model letters to eliminate common printing errors like valleys, blobs, gaps, volcanoes, and oops; practice with consistent retraces, round circles, and proper closures to produce even, legible handwriting.</p>
+          </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/book6.jpg"
+                class="card-img-top"alt="...">
+            
+            <div class="card-body">
+              <h4 class="card-title">ROMEO AND JULIET</div>
+            <p class="card-text p-4">Trace model letters to eliminate common printing errors like valleys, blobs, gaps, volcanoes, and oops; practice with consistent retraces, round circles, and proper closures to produce even, legible handwriting.</p>
+          </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="images/book4.jpg"
+                class="card-img-top"alt="... p-4">
+            
+            <div class="card-body">
+              <h4 class="card-title">MILK AND HONEY</div>
+            <p class="card-text p-4">Trace model letters to eliminate common printing errors like valleys, blobs, gaps, volcanoes, and oops; practice with consistent retraces, round circles, and proper closures to produce even, legible handwriting.</p>
+          </div>
+            </div>
+           </div>
+            </div>
+        </div>
+      </section>
+      <!-- product section  -->
+       
+      <!-- services section start -->
+      <section class="my-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Book Categories -->
+            <div class="col-md-6">
+                <h3 class="mb-3">Book Categories</h3>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Programming Books</li>
+                    <li class="list-group-item list-group-item-primary">Novels</li>
+                    <li class="list-group-item list-group-item-primary">Science Books</li>
+                    <li class="list-group-item list-group-item-primary">History Books</li>
+                    <li class="list-group-item list-group-item-primary">Business Books</li>
+                    <li class="list-group-item list-group-item-primary">Technical Books</li>
+                </ul>
+            </div>
+
+            <!-- Popular Books -->
+            <div class="col-md-6">
+                <h3 class="mb-3">Popular Books</h3>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Clean Code</li>
+                    <li class="list-group-item list-group-item-primary">R.S agrawal</li>
+                    <li class="list-group-item list-group-item-primary">Atomic Habits</li>
+                    <li class="list-group-item list-group-item-primary">Rich Dad Poor Dad</li>
+                    <li class="list-group-item list-group-item-primary">The Alchemist</li>
+                    <li class="list-group-item list-group-item-primary">Economics</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+     </main>
+
+     <footer>
+      <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Contact -->
+            <div class="col-md-4 mb-4">
+                <h5>CONTACT US</h5>
+                <hr>
+                <h4>Book Haven</h4>
+
+                <p>
+                    123 Book Street,<br>
+                    Pune, Maharashtra - 411001
+                </p>
+
+                <p>
+                     +91 98765 43210 <br>
+                     info@bookhaven.com
+                </p>
+            </div>
+
+            <!-- Categories -->
+            <div class="col-md-3 mb-4">
+                <h5>CATEGORIES</h5>
+                <hr>
+
+                <ul>
+                    <li>Programming Books</li>
+                    <li>Novels</li>
+                    <li>Science Books</li>
+                    <li>History Books</li>
+                    <li>Children Books</li>
+                </ul>
+            </div>
+
+            <!-- Information -->
+            <div class="col-md-3 mb-4">
+                <h5>INFORMATION</h5>
+                <hr>
+
+                <ul>
+                   <li>About Us</li>
+                    <li>FAQs</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Shipping Policy</li>
+                </ul>
+            </div>
+
+            <!-- Connect -->
+            <div class="col-md-2 mb-4">
+                <h5>CONNECT</h5>
+                <hr>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>LinkedIn</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+            <p>
+                © 2026 Book Haven. All Rights Reserved. Designed by Bhagavi Bisen.
+            </p>
+        </div>
+    </div>
+</footer>
+    
     <!-- Header End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
